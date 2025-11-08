@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تاس قلقلی 🎲</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>تاس قلقلی 🎲</h1>
+
+    <div class="dic_area hidden">
+      <div class="player">
+        <p id="p1name"></p>
+        <img class="img1" src="images/dice6.png" alt="Dice 1">
+      </div>
+      <div class="player">
+        <p id="p2name"></p>
+        <img class="img2" src="images/dice6.png" alt="Dice 2">
+      </div>
+    </div>
+
+    <button class="start">شروع بازی</button>
+    <button class="roll hidden">بزن تاس 🎲</button>
+  </div>
+
+  <footer>© ۲۰۲۵ ساخته‌ی الهام 😄</footer>
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="index.js"></script>
+
+  <script>
+    // فعال‌سازی صدای مرورگر در اولین کلیک
+    document.body.addEventListener('click', () => {
+      const sounds = document.querySelectorAll('audio');
+      sounds.forEach(sound => sound.play().then(() => sound.pause()));
+    }, { once: true });
+  </script>
+</body>
+</html>
