@@ -24,7 +24,7 @@ function getBet() {
   bet = prompt("روی چی شرط می‌بندین؟ 🍕 (مثلاً بستنی یا پیتزا)") || "یه چیز خوشمزه";
   rollBtn.disabled = false;
   rollBtn.style.opacity = "1";
-  title.textContent = "حالا بزن رو تاس قلقلی 🎲";
+  title.textContent = "حالا بزن رو تاس زرده 🎲";
 }
 
 // تابع تاس انداختن
@@ -75,3 +75,4 @@ function rollDice() {
 // رویداد دکمه‌ها
 document.querySelector(".start").addEventListener("click", getPlayers);
 rollBtn.addEventListener("click", rollDice);
+
